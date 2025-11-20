@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>p5.js 작품 모음</title>
-    <link rel="stylesheet" href="style.css">
+    <title>P5.js 최종 과제 제출 웹사이트</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; margin: 20px; text-align: center; background-color: #f8f9fa; color: #343a40;}
+        h1 { color: #007bff; margin-bottom: 30px;}
+        /* 2x2 그리드 레이아웃 */
+        .assignment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; max-width: 960px; margin: 0 auto; padding: 20px;}
+        .assignment-item { background-color: #ffffff; padding: 20px; border: 1px solid #e9ecef; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: transform 0.2s;}
+        .assignment-item:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.1);}
+        .assignment-item h2 { color: #28a745; margin-top: 0;}
+        .assignment-item a { text-decoration: none; color: #007bff; font-size: 1.2em; font-weight: bold; display: block; margin-top: 15px; padding: 10px; border: 1px solid #007bff; border-radius: 5px;}
+        .assignment-item a:hover { background-color: #007bff; color: white;}
+        @media (max-width: 768px) { .assignment-grid { grid-template-columns: 1fr; }}
+    </style>
 </head>
 <body>
-    <header>
-        <h1>나의 p5.js 작품</h1>
-        <p>아래 링크를 클릭하여 다양한 p5.js 프로그램을 감상하세요.</p>
-    </header>
-
-    <section id="projects">
-    
-        <div class="project">
-            <a href="sample1/index.html">
-                프로젝트 1: 이 프로그램은 마우스를 따라 움직이는 원을 그립니다.
-            </a>
-        </div>
-    
-        <div class="project">
-            <a href="sample2/index.html">
-                프로젝트 2: 이 프로그램은 다양한 색상으로 변화하는 배경을 만듭니다.
-            </a>
-        </div>
-
-    </section>
+    <h1>P5.js 최종 과제 제출 웹사이트</h1>
+    <p>교수님의 요구사항에 따라 <strong>1, 4 / 2, 3</strong> 순서로 작품을 배치했습니다.</p>
+    <div class="assignment-grid">
+        <div class="assignment-item"> <h2>🥇 과제 1 (추상화)</h2> <p>작품 경로: <code>assignment1/index.html</code></p> <a href="assignment1/index.html">작품 바로가기</a> </div>
+        <div class="assignment-item"> <h2>🏅 과제 4 (추상화 시간에 따른 움직임)</h2> <p>작품 경로: <code>assignment4/index.html</code></p> <a href="assignment4/index.html">작품 바로가기</a> </div>
+        <div class="assignment-item"> <h2>🥈 과제 2 (캐리커처)</h2> <p>작품 경로: <code>assignment2/index.html</code></p> <a href="assignment2/index.html">작품 바로가기</a> </div>
+        <div class="assignment-item"> <h2>🥉 과제 3 (움직이는 캐리커쳐)</h2> <p>작품 경로: <code>assignment3/index.html</code></p> <a href="assignment3/index.html">작품 바로가기</a> </div>
+    </div>
 </body>
 </html>
